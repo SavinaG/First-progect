@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Resume" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="Savina Gyoshkova" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>SaviG'sPage</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="container">
+        <a class="logo" href="#">Savina Gyoshkova first website ;)</a>
+        <img id="mobile-cta" class="mobile-menu" src="./css/images/icons8-menu-50.png" alt="Open Navigation">
+        <nav>
+          <img id="mobile-exit" class="mobile-menu-exit" src="./css/images/icons8-close-window-50.png" alt="Close Navigation">
+          <ul class="primary-nav">
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+        <ul class="secondary-nav">
+          <li><a href="#">Contact</a></li>
+      </ul>
+        </nav>
+      </div>
+    </div>
+
+    <section class="hero">
+      <div class="container">
+        <div class="left-col">
+          <h2>So how it all started...</h2>
+        </div>
+        <img
+          class="first-girl"
+          src="./css/images/istockphoto-611776860-612x612.jpg"
+          alt="Girl going on ship"
+        />
+        <p>
+          I’ve started working in casino in the beginning of 2004. Ever since I
+          loved what I do and still working in gambling business for more than
+          17 yeas now. But I didn’t stick to one place. Not long after I
+          started, I’ve decide this job is giving me the opportunity to travel
+          the world, so I did. At first went working in Agadir, Morocco. Spend
+          there one year. And than an interesting started. Pass an interview and
+          went working on a big and beautiful cruise ship. I loved it, and I
+          stick to it for more than five years. Growth through the years, become
+          a casino manager and been on this position for more than three years.
+          One day I decide to settle down and come back home for good.
+        </p>
+      </div>
+      <div class="right-col">
+        <h2>And how it going to continue...</h2>
+      </div>
+      <img
+        class="second-girl"
+        src="./css/images/girl-and-a-laptop-vector-1429391.jpg"
+        alt="Girl going on ship"
+      />
+      <p>
+        And than it happened, pandemic came than lock down. And I got love for sating home with my laptop. I've always wanted to study and decide to take some courses from home. Bump into free online JavaScript course for beginners offered from software university (Softuni.bg). At first in the beginning it was very hard but I knew never to gave up. I’m finishing soon the last professional module JS web and soon will graduate. Now looking for new adventure to starting my internship and see the real thing from inside. Very exited about what is wet to come.
+      </p>
+    </div>
+    </section> 
+    <script>
+
+        const mobileBtn = document.getElementById('mobile-cta')
+        const nav = document.querySelector('nav')
+        const mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        });
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        });
+
+    </script>
+  </body>
+  <footer>
+    <p>Page is under construction</p>
+  </footer>
+</html>
